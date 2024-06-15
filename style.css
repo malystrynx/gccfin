@@ -1,0 +1,1046 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;700&display=swap'); */
+
+/* @
+ */
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* REUSABLE COMPONENTS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    scroll-behavior: smooth;
+    /* border-style: solid; */
+}
+.images {
+  max-width: 100%;
+  width: 600px; /* Adjust the width to your preferred value */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  object-fit: cover; /* Ensures the image covers the specified dimensions while maintaining its aspect ratio */
+}
+.scrolling{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.5s,padding 0.5s;
+}
+.scrolling.active{
+    background-color:#000000b6  ;
+    padding: 16px 100px ;
+    
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 5px solid #3498db;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-section, .email-us-section {
+  flex: 1 1 300px;
+  margin: 20px;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.email-us-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+/* nav bar */
+
+/* text edits  */
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav__border {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px; /* Adjust the padding as needed */
+  }
+
+  .top__title{
+    
+      color: black; /* Change the color to whatever you prefer */
+      font-size: 50px; /* Adjust the font size as needed */
+      text-align: center;
+
+  }
+
+
+
+.logo__img{
+    width: 180px;
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 40px;
+
+}
+
+.nav__list{
+    list-style:  none;
+    display: flex;
+    align-items: center;
+}
+
+.right__nav--list{
+    margin-left: 20px;
+}
+
+.inner__main--nav{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.image{
+    width: 100%;
+    max-height: 800px;
+    filter: blur(0); /* Initial blur level set to 0 (no blur) */
+    transition: filter 0.1s; 
+    
+}
+/* REUSABLE */
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+}
+/* REUSABLE */
+.nav__link{
+    text-decoration: none !important;
+    color: white;
+    position: relative;
+    transition: all 0.4s;
+}
+.nav__link:hover{
+    color: #fff;
+}
+
+.nav__link::after{
+    content:'';
+    height: 2px;
+    width: 100%;
+    background:white;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+}
+.story__color{
+padding-left: 50px;
+padding-right: 50px;
+}
+.button__text{
+  padding-bottom: 20px;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+text-align: center;}
+.nav__bar{
+    width: 100%;
+}
+
+.Sydney{
+    color: #3498db ;
+}
+.front{
+  text-align: center;
+}
+/* SIZING AND POSITION FOR TEXT */
+
+h2{
+    font-size: 36px;
+    color: white;
+}
+
+
+
+
+.image-section {
+    position: relative;
+}
+
+.text-overlay {
+    color: white !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s; /* Smooth opacity transition */
+}
+
+.welcome__font{
+    font-size: 22px ;
+}
+.welcome{
+  font-size: 80px;
+}
+
+/* Information */
+.info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.story__title{
+    color:#000  ;
+}
+
+.story__layout{
+padding-bottom: 100px;
+}
+
+
+.our__story--color{
+    color: black;
+    text-align: center;
+    /* text-align: center; */
+
+}
+.our__story{
+    display: flex;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    
+}
+.layout{
+
+
+    line-height: 2;
+    padding-left: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+
+    
+
+    ;
+}
+
+
+.youtube{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 75px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* location */
+.layout__map{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(11,17,17,1) 80%, rgba(16,54,96,1) 100%, rgba(0,212,255,1) 100%);
+padding-bottom: 50px;
+padding-top:50px;
+    display: flex;
+    line-height: 2;
+    
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.maps__title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.layout__map{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/* meeting times */
+
+  .meeting__body{
+    
+    text-align: center;
+  }
+  
+.meeting__body p{
+    font-size: 15px;
+margin-bottom: 5px;
+color: white;
+}
+.meeting__body h4{
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color: white;
+}
+
+ 
+  .schedule-table {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sunday__worship,
+  .prayer__meetings,
+  .life__groups {
+    width: 30%; /* Adjust the width of each section */
+    padding: 10px;
+     /* Optional: Add borders for a table-like appearance */
+    margin: 10px; /* Optional: Add spacing between sections */
+  }
+
+/* leadership */
+.leadership {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.image-container {
+  flex: 1 1 150px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.ppaul {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision__text {
+  flex: 3 1 600px;
+}
+
+.about--title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.rev {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about--para {
+  margin-bottom: 10px;
+}
+/* BORDERS FOR LOCATION AND TIME  */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100vw / 3);
+    /* border: 1px solid lightgrey; */
+    margin: 0 16px;
+}
+
+
+
+.vertical-line {
+    height: 120px; /* Set the height to the desired length */
+    width: 2px;
+    background: #bf9b5f;
+    margin: auto;
+    padding: auto;
+}
+
+/* scroll */
+.scroll{
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 700ms;
+}
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .scroll__icon{
+    width: 20px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.scroll__icon:after{
+    content:"";
+    width: 4px;
+    height: 6px;
+    background-color: white;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate;
+} */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 300px; /* Ensure the modal doesn't get too wide */
+  text-align: center; /* Center the text */
+  position: relative; /* Ensure the close button is positioned relative to the modal content */
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px; /* Adjust this value to move the button higher or lower */
+  right: 20px; /* Adjust this value to move the button left or right */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes scroll{
+    0%{
+        transform: translateY(3px);
+    }
+
+    100%{
+        transform: translateY(-3px);
+    }
+}
+
+/* Read more button in our story */
+.read-more-btn {
+    background-color: #3498db; /* Button background color */
+    color: #fff; 
+    padding: 10px 25px; /* Adjust padding as needed */
+    font-size: 16px; 
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .read-more-btn:hover {
+    background-color: #2980b9;
+  }
+
+  .custom-position {
+    margin-left: auto; /* This will push the button to the right */
+  }
+
+  .read__more{
+     text-decoration: none; 
+     color: white;
+  }
+
+
+  /* VISION */
+
+  .about--title,.about--title1{
+    
+    color: #000;
+  }
+  .vision {
+    text-align: center;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+    gap: 20px; /* Adds space between the image and text */
+    padding: 20px; /* Adds padding around the container */
+}
+  .title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+/* About */
+.about__image{
+  height: 40vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center vertically */
+  background: linear-gradient(90deg, rgba(24,0,36,1) 0%, rgba(42,72,80,1) 64%, rgba(0,212,255,1) 100%);
+  color: white; /* Text color */
+  text-align: left;
+}
+.text__content{
+  font-size: 4rem;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+.vision, .about__story{
+  max-width: 90%;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.about__picture{
+  width: 100%;
+  height: 30%; 
+  object-fit: cover; 
+}
+.retreat__pic{
+  height: 425px;
+}
+
+.about__image--1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%; 
+  max-height: 90%; 
+  bottom: 10%;
+}
+
+
+.about--title,.about--title1, .leadership__h2{
+font-size: 22.4px;
+text-align: center;
+padding-bottom: 20px;
+}
+.headline{
+  padding-top: 40px;
+}
+.about--para{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-size: 18px;
+  color: #464646;
+
+}
+
+.about__text {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.vision__text {
+  max-width: 80%; /* Sets the maximum width of the text container to 80% of its parent container */
+  margin: auto; /* Centers the text container within its parent */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the total dimensions */
+  display: flex;
+  flex-direction: column; /* Arranges the content vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+.about--title {
+  text-align: center; /* Centers the title text */
+}
+
+.footer{
+  padding-top:30px;
+}
+.footer__top{
+display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+/* Believe */
+.our__beliefs {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #252525;
+  color: #fff;
+}
+
+.belief__image {
+  width: 30%;
+  max-height: 500px;
+  height: auto;
+  object-fit: cover;
+  position: sticky;
+  top: 40px; /* Adjust as needed to set the distance from the top of the viewport */
+}
+
+.believe__section {
+  width: 70%;
+}
+
+.believe__section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.belief__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.belief__item {
+  width: calc(50% - 10px);
+  background-color: #252525;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.belief__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #252525;
+  position: relative;
+}
+
+.belief__title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #0099cc;
+}
+
+.believe__para {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.crca{
+  text-decoration: none;
+  color: #fff;
+  }
+  .crca:visited{
+    text-decoration: none;
+    color: #FFF;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1360px) {
+
+  .leadership__img1{
+    height: 250px;
+  }
+  .story__color{
+    font-size: 18px
+  }
+  .about__title{
+    font-size: 20px;
+    
+  }
+  
+  .about--title,.about--title1{
+    padding-top: 30px;
+  }
+    body {
+      font-size: 14px;
+    }
+  .scrolling{
+    max-width: 100%;
+  }
+    .nav {
+      padding-left: 20px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 50px;
+    }
+
+  
+    .welcome {
+      font-size: 48px;
+    }
+  
+    .info {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .story__layout {
+      padding-bottom: 50px;
+padding-left: 80px;
+padding-right: 15px;
+
+    }
+  
+    .our__story {
+      display: flex;
+    max-width: 80%;
+    justify-content: flex-end;
+    }
+  
+    .layout {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .maps__title {
+      padding-top: 10px;
+    }
+  
+    .meeting__body p {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1.4em;
+      line-height: 1.2em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 14px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+
+  /* Leadership */
+  .image{
+    max-width: 100%;
+  }
+  
+  }
+
+  
+  /* Add this media query for screens up to 425px width */
+  @media(max-width: 980px) {
+    
+    .image {
+      max-width: 768px; /* Added 'px' unit */
+    }
+
+    body {
+      font-size: 12px;
+    }
+  
+    .nav {
+      padding: 15px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 30px;
+    }
+  
+    .nav__link {
+      font-size: 13px;
+    }
+  
+    .welcome {
+      font-size: 36px;
+    }
+  
+    .info {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+    .story__layout {
+      padding-bottom: 30px;
+      display: flex;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 90%;
+    }
+  
+    .layout {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  
+    .maps__title {
+      padding-top: 10px;
+    }
+  
+    .meeting__body p {
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 13px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+  }
+  
+@media (max-width: 320px) {
+    body {
+      font-size: 8px;
+    }
+  
+    .nav {
+      padding: 6px;
+    }
+  
+    .scrolling.active {
+      padding: 12px 14px;
+    }
+  
+    .nav__link {
+      font-size: 10px;
+    }
+  
+    .welcome {
+      font-size: 18px;
+    }
+  
+    .info {
+      padding-right: 6px;
+      padding-left: 6px;
+    }
+  
+    .story__layout {
+      padding-bottom: 12px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 100%;
+    }
+  
+    .layout {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+    .maps__title {
+      padding-top: 4px;
+    }
+  
+    .meeting__body p {
+      font-size: 8px;
+      margin-bottom: 2px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 0.8em;
+      line-height: 0.8em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 4px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 8px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+  }
