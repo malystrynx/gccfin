@@ -20,6 +20,11 @@
     scroll-behavior: smooth;
     /* border-style: solid; */
 }
+.background__colour--blue{
+  height: 1000px;
+  background-color: #34566b;
+}
+
 .images {
   max-width: 100%;
   width: 600px; /* Adjust the width to your preferred value */
@@ -142,6 +147,9 @@
 .footer-bottom p {
   margin: 0;
 }
+.random__colour{
+  background-color:blue ;
+}
 /* Button */
 .btn{
   background-color: #fff;
@@ -234,19 +242,19 @@
 /* REUSABLE */
 .nav__link{
     text-decoration: none !important;
-    color: white;
+    color: #edeae1;
     position: relative;
     transition: all 0.4s;
 }
 .nav__link:hover{
-    color: #fff;
+    color: #edeae1;
 }
 
 .nav__link::after{
     content:'';
     height: 2px;
     width: 100%;
-    background:white;
+    background:#edeae1;
     display: block;
     position: absolute;
     opacity: 0;
@@ -281,7 +289,7 @@ text-align: center;}
 
 h2{
     font-size: 36px;
-    color: white;
+    color: #edeae1;
 }
 
 
@@ -292,10 +300,10 @@ h2{
 }
 
 .text-overlay {
-    color: white !important;
+    color: #edeae1;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
     transition: opacity 0.5s; /* Smooth opacity transition */
 }
@@ -399,12 +407,12 @@ padding-top:50px;
 .meeting__body p{
     font-size: 15px;
 margin-bottom: 5px;
-color: white;
+color: #edeae1;
 }
 .meeting__body h4{
     font-size: 1.6em;
     line-height: 1.2em;
-    color: white;
+    color: #edeae1;
 }
 
  
@@ -531,7 +539,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #4CAF50;
-  color: white;
+  color: #edeae1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -612,7 +620,7 @@ button:hover {
 
   .read__more{
      text-decoration: none; 
-     color: white;
+     color: #edeae1;
   }
 
 
