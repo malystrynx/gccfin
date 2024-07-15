@@ -76,12 +76,12 @@ function toggleContent() {
         setTimeout(() => {
             content.style.maxHeight = '0';
             content.classList.remove('open');
-        }, 100); // Adjust delay as needed
+        }, 100);
     } else {
         content.classList.add('open');
         content.style.maxHeight = content.scrollHeight + 'px';
         setTimeout(() => {
             content.style.maxHeight = 'none';
-        }, 500); // Adjust to match the transition duration
+        }, 500); 
     }
 }
