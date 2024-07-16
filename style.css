@@ -176,6 +176,7 @@
 .containertext{
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 20px;
 }
 .dropdown__text{
   max-width: 80%;
@@ -206,9 +207,8 @@
   transition: max-height 0.5s ease, padding 0.5s ease, margin-top 0.5s ease;
   margin-top: 0;
   padding: 0 15px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #F8F7F4;
 }
 
 .extra-content.open {
@@ -753,6 +753,37 @@ color: #edeae1;
   top: 45%; /* Adjust these values to position text as needed */
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text1 {
+  font-size: 16px;
+  top: 35%; 
+}
+
+.text2 {
+  font-size: 48px;
+  top: 45%;
+}
+
+.text3 {
+  font-size: 48px;
+  top: 55%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block; 
 }
 .vision, .about__story{
   max-width: 90%;
