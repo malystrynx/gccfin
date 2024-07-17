@@ -25,10 +25,6 @@
 .italics{
   font-style: italic;
 }
-.background__colour--blue{
-  height: 800px;
-  background-color:#242424;
-}
 .images-container {
     display: flex;
     flex-wrap: wrap;
@@ -484,6 +480,7 @@ margin-bottom: 5px;
 color: #edeae1;
 }
 .meeting__body h4{
+  padding-bottom: 24px;
     font-size: 1.6em;
     line-height: 1.2em;
     color: #edeae1;
@@ -598,7 +595,7 @@ color: #edeae1;
 
 
 .vertical-line {
-    height: 120px; /* Set the height to the desired length */
+    height: 160px; /* Set the height to the desired length */
     width: 2px;
     background: #bf9b5f;
     margin: auto;
@@ -1028,6 +1025,7 @@ padding-right: 15px;
     }
   
     .meeting__body h4 {
+      padding-bottom: 24px;
       font-size: 1.4em;
       line-height: 1.2em;
     }
